@@ -1,6 +1,6 @@
 ---
-const { title = "Pine Lake Covenant Church" } = Astro.props;
-import "../styles/global.css";
+const { title = 'Pine Lake Covenant Church' } = Astro.props
+import '../styles/global.css'
 ---
 
 <!doctype html>
@@ -13,7 +13,7 @@ import "../styles/global.css";
 
   <body>
     <header>
-        <nav>
+      <nav>
         <a href={`${import.meta.env.BASE_URL}`}>PLCC</a>
 
         <a href={`${import.meta.env.BASE_URL}im-new/`}>I’m New</a>
@@ -25,7 +25,7 @@ import "../styles/global.css";
         <a href="https://plcc.churchcenter.com/giving">Give</a>
 
         <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
-        </nav>
+      </nav>
     </header>
 
     <main>
