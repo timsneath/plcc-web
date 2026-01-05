@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About | Pine Lake Covenant Church">
+  <h1>About Pine Lake</h1>
+
+  <p>
+    A short, plain-English narrative about who you are, what you’re like, and what you hope people experience.
+  </p>
+
+  <ul>
+    <li><a href={`${import.meta.env.BASE_URL}about/ethos/`}>Our Ethos</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}about/beliefs/`}>What We Believe</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}about/leadership/`}>Leadership</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}about/covenant/`}>The Evangelical Covenant Church</a></li>
+  </ul>
+</BaseLayout>

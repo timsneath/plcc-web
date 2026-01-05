@@ -1,12 +1,17 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="I’m New | Pine Lake Covenant Church">
   <h1>I’m New</h1>
 
   <p>
-    Visiting a church for the first time can feel intimidating.
-    Here’s what you can expect at Pine Lake.
+    Visiting a church for the first time can feel intimidating. Here’s what you can expect at Pine Lake.
   </p>
+
+  <ul>
+    <li><a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}kids/`}>Kids & Families</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}about/`}>Our Ethos & Beliefs</a></li>
+  </ul>
 </BaseLayout>

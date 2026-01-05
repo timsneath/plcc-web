@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Ministries | Pine Lake Covenant Church">
+  <h1>Ministries</h1>
+
+  <p>Ways to connect by life stage and community.</p>
+
+  <ul>
+    <li><a href={`${import.meta.env.BASE_URL}kids/`}>Kids & Families</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}ministries/adults/`}>Adults</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}ministries/care/`}>Care & Support</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}ministries/outreach/`}>Outreach</a></li>
+  </ul>
+</BaseLayout>

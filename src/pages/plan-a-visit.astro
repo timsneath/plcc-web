@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Plan a Visit | Pine Lake Covenant Church">
+  <h1>Plan a Visit</h1>
+
+  <p>
+    Everything you need to feel comfortable showing up on a Sunday: what it’s like, where to go, what to do with kids,
+    and what to expect in the service.
+  </p>
+
+  <h2>Service times</h2>
+  <p>Sundays at 9:00 & 10:45 (update as needed)</p>
+
+  <h2>Location & parking</h2>
+  <p>Add address, map embed, and “where to enter” details here.</p>
+
+  <h2>What it feels like</h2>
+  <ul>
+    <li>Service length: ~70 minutes (example)</li>
+    <li>Music style: …</li>
+    <li>Dress: …</li>
+  </ul>
+
+  <h2>Bringing kids?</h2>
+  <p>
+    Start here: <a href={`${import.meta.env.BASE_URL}kids/`}>Kids & Families</a>
+  </p>
+</BaseLayout>
