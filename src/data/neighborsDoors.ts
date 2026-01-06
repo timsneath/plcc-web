@@ -61,8 +61,8 @@ export const neighborsDoors: Door[] = [
       'Community groups and nonprofit gatherings',
       'Programs that serve the local community',
     ],
-    ctaLabel: 'Building & Space Use',
-    href: '/building-space-use/',
+    ctaLabel: 'Weddings & Memorials',
+    href: '/for-our-neighbors/weddings-memorials/',
   },
   {
     id: 'serve',
