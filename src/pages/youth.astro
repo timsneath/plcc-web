@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="Youth | Pine Lake Covenant Church">
+  <article class="page page--wide">
+    <header class="page__header">
+      <h1>Pine Lake Youth</h1>
+      <p class="page__subhead">
+        A place for middle school and high school students to find &amp; follow Jesus together
+      </p>
+
+      <p class="page__lede measure">
+        Our hope is that Pine Lake Youth would be a place where you can be yourself, belong to something bigger, and
+        become part of bringing heaven to earth.
+      </p>
+
+      <div class="youth-gallery" aria-label="Photos from Pine Lake Youth">
+        <figure class="youth-gallery__tile">
+          <img
+            src={`${import.meta.env.BASE_URL}images/youth-01-1600x1600.jpg`}
+            width="1600"
+            height="1600"
+            alt="Students at Pine Lake Youth"
+            loading="eager"
+          />
+        </figure>
+        <figure class="youth-gallery__tile">
+          <img
+            src={`${import.meta.env.BASE_URL}images/youth-02-1600x1600.jpg`}
+            width="1600"
+            height="1600"
+            alt="A moment from a Pine Lake Youth gathering"
+            loading="eager"
+          />
+        </figure>
+        <figure class="youth-gallery__tile">
+          <img
+            src={`${import.meta.env.BASE_URL}images/youth-03-1600x1600.jpg`}
+            width="1600"
+            height="1600"
+            alt="Students connecting in community"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="youth-gallery__tile">
+          <img
+            src={`${import.meta.env.BASE_URL}images/youth-04-1600x1600.jpg`}
+            width="1600"
+            height="1600"
+            alt="Pine Lake Youth activity"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </header>
+
+    <section class="youth-quick">
+      <div class="card-grid">
+        <div class="card">
+          <h2>Tuesday nights</h2>
+          <p>
+            <strong>6:00–8:00pm</strong><br />
+            Dinner at 6pm, then connection time, worship, teaching, and small groups (middle school and high school).
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Sunday worship</h2>
+          <p>
+            <strong>10:00am</strong><br />
+            Students sit together in the front three rows and are part of the whole church family.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Who it’s for</h2>
+          <p>
+            <strong>6th–12th grade</strong><br />
+            Middle school and high school students. Bring a friend. Come as you are.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="measure">
+      <h2>What a Tuesday night feels like</h2>
+      <p>
+        We begin with dinner because it’s hard to build community on an empty stomach. From there, the night includes
+        time to connect, worship that’s accessible, teaching that’s grounded and practical, and small groups where
+        students can talk honestly and be known.
+      </p>
+    </section>
+
+    <section class="measure youth-connect">
+      <h2>Want to get connected?</h2>
+      <p>
+        If you’re new, you’re welcome. If you’ve never been to a youth group, you’ll be fine. If you’ve been around
+        church a lot—or hardly at all—this can still be a great place to grow.
+      </p>
+
+      <p class="youth-connect__links">
+        <a href="https://www.instagram.com/pinelakeyouth/" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:office@plcc.org">Email</a>
+        <a href={`${import.meta.env.BASE_URL}whats-happening/`}>Current schedule</a>
+      </p>
+    </section>
+
+    <section class="measure">
+      <h2>Discipleship &amp; highlights through the year</h2>
+      <p>
+        In addition to our weekly rhythm, we plan retreats, service opportunities, and trips that help students grow in
+        faith and friendship. Here are a few of the recurring highlights.
+      </p>
+
+      <h3>Confirmation</h3>
+      <p>
+        Confirmation is a 6-month discipleship experience for students 8th grade and up, taking a deep dive into
+        Scripture. Students are paired with a mentor to explore questions of life and faith, with monthly gatherings for
+        group teaching. The year is capped off with Confirmation Sunday in early June.
+      </p>
+
+      <h3>Campbell Farm</h3>
+      <p>
+        Campbell Farm is the middle school highlight of the summer: a three-day discipleship trip to the Yakama nation
+        in partnership with The Campbell Farm, a community and retreat center in Wapato, WA. The trip includes immersive
+        cross-cultural learning experiences—and plenty of summer fun.
+      </p>
+
+      <h3>Retreats</h3>
+      <p>
+        Each year we make space for weekends designed for fun, worship, teaching, and building friendships—some hosted
+        alongside other churches in our conference, and some as Pine Lake Youth retreats.
+      </p>
+    </section>
+
+    <section class="measure">
+      <h2>Service &amp; missions</h2>
+      <p>
+        We want students to see faith as something that moves outward—serving with others, showing up locally, and
+        learning how to love our neighbors in practical ways.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Global 6K for Water</strong> — a whole-family event that helps provide clean water (next date: May 16, 2026).
+        </li>
+        <li>
+          <strong>Capernaum Talent Show</strong> — a yearly highlight with Young Life Capernaum (students with special needs
+          and their families).
+        </li>
+        <li>
+          <strong>Community Meal Packaging</strong> — typically in early December, partnering to package meals for kids in
+          Sierra Leone.
+        </li>
+        <li>
+          <strong>Unite</strong> — a regional high school event held every other summer (next planned: Summer 2027).
+        </li>
+      </ul>
+
+      <p>
+        <a href={`${import.meta.env.BASE_URL}whats-happening/`}>See what’s coming up →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

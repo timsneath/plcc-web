@@ -16,9 +16,39 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         Whether you’re visiting for the first time, connected through a youth group, or looking for a church community
         to grow alongside your kids, you’re welcome here.
       </p>
+
+      <section class="section">
+        <h2>Find the right fit</h2>
+
+        <p>Family life looks different at every age. If you’re looking for specific info, start here:</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Kids</h3>
+            <p>
+              Sunday morning programs for <strong>babies through 5th grade</strong>, plus midweek connection points and
+              summer highlights.
+            </p>
+            <p>
+              <a href="#kids">Explore kids →</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Youth</h3>
+            <p>
+              For <strong>6th–12th grade</strong>. Tuesdays 6:00–8:00pm, plus students sit together on Sundays at
+              10:00am.
+            </p>
+            <p>
+              <a href={`${import.meta.env.BASE_URL}youth/`}>Explore Pine Lake Youth →</a>
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
 
-    <section class="section">
+    <section class="section" id="kids">
       <h2>Families on Sunday mornings</h2>
 
       <p>
