@@ -1,0 +1,20 @@
+---
+type Quote = { text: string; by?: string }
+
+type Props = {
+  quotes: Quote[]
+}
+
+const { quotes } = Astro.props
+---
+
+<div class="story-grid">
+  {
+    quotes.map((q) => (
+      <blockquote class="story-quote">
+        <p>{q.text}</p>
+        {q.by && <footer>— {q.by}</footer>}
+      </blockquote>
+    ))
+  }
+</div>

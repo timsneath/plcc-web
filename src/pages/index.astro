@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import VignetteGrid from '../components/VignetteGrid.astro'
+import QuoteGrid from '../components/QuoteGrid.astro'
+import { vignettes } from '../data/vignettes'
+import { homepageQuotes } from '../data/quotes'
 ---
 
 <BaseLayout title="Pine Lake Covenant Church | Sammamish">
@@ -99,6 +103,18 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     <p>
       Wherever you’re coming from, whatever questions you bring, you’re welcome here. We’re a community learning to
       follow Jesus together, with room to grow, to belong, and to take things at your own pace.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why people come to Pine Lake</h2>
+
+    <p style="max-width: 60ch;">A few voices from our community — and a few glimpses of life together at Pine Lake.</p>
+
+    <VignetteGrid images={vignettes} />
+    <QuoteGrid quotes={homepageQuotes} />
+    <p style="margin-top: 1rem;">
+      <a href={`${import.meta.env.BASE_URL}stories/`}>More stories from Pine Lake</a>
     </p>
   </section>
 
