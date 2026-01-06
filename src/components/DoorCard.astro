@@ -1,0 +1,33 @@
+---
+type Props = {
+  title: string
+  intro: string
+  body: string
+  bullets: string[]
+  ctaLabel: string
+  href: string
+}
+
+const { title, intro, body, bullets, ctaLabel, href } = Astro.props
+---
+
+<article class="door">
+  <header class="door__header">
+    <div class="door__badge" aria-hidden="true">Door</div>
+    <h2 class="door__title">{title}</h2>
+  </header>
+
+  <p class="door__intro">{intro}</p>
+  <p class="door__body">{body}</p>
+
+  <ul class="door__list">
+    {bullets.map((b) => <li>{b}</li>)}
+  </ul>
+
+  <p class="door__cta">
+    <a class="door__link" href={`${import.meta.env.BASE_URL}${href.replace(/^\//, '')}`}>
+      {ctaLabel}
+      <span aria-hidden="true">→</span>
+    </a>
+  </p>
+</article>

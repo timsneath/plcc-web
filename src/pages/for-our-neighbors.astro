@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import DoorCard from '../components/DoorCard.astro'
+import { neighborsDoors } from '../data/neighborsDoors'
+---
+
+<BaseLayout title="For Our Neighbors | Pine Lake Covenant Church">
+  <header class="neighbors-hero">
+    <h1>For Our Neighbors</h1>
+    <p class="neighbors-hero__subhead">Serving Sammamish, Issaquah, and the surrounding communities</p>
+
+    <p class="neighbors-hero__lede">
+      Pine Lake is a church, but you don’t need to be “a church person” to be welcome here. We want to be a good
+      neighbor — offering support when life is hard, space for community to gather, and ways to connect and build
+      something meaningful together.
+    </p>
+
+    <p class="neighbors-hero__lede">
+      People come through our doors for different reasons. Below are some of the most common starting points.
+    </p>
+  </header>
+
+  <section class="doors" aria-label="Ways to connect with Pine Lake">
+    {neighborsDoors.map((d) => <DoorCard {...d} />)}
+  </section>
+</BaseLayout>
