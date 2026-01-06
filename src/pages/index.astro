@@ -7,170 +7,116 @@ import { homepageQuotes } from '../data/quotes'
 ---
 
 <BaseLayout title="Pine Lake Covenant Church | Sammamish">
-  <section>
-    <h1>A church in Sammamish, discovering life with Jesus together</h1>
-    <p>Sundays at 10:00am · Families, kids, and youth are an important part of our life together</p>
+  <article class="page page--wide">
+    <header class="page__header">
+      <h1>A church in Sammamish, discovering life with Jesus together</h1>
+      <p class="page__subhead">Sundays at 10:00am · Families, kids, and youth are an important part of our life together</p>
 
-    <p>
-      <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
-      ·
-      <a href={`${import.meta.env.BASE_URL}im-new/`}>I’m New Here</a>
-    </p>
+      <p class="page__lede">
+        <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
+        ·
+        <a href={`${import.meta.env.BASE_URL}im-new/`}>I’m New Here</a>
+      </p>
 
-    <figure style="margin: 2rem 0;">
-      <div
-        style="
-          aspect-ratio: 16 / 9;
-          width: 100%;
-          border-radius: 12px;
-          background: #eee;
-          display: grid;
-          place-items: center;
-        "
-      >
-        <span style="color: #777;">Hero photo placeholder (worship / community)</span>
+      <figure class="media">
+        <div class="media__frame ratio-16x9">
+          <span class="media__label">Hero photo placeholder (worship / community)</span>
+        </div>
+        <figcaption class="media__caption">A welcoming community, centered on Jesus.</figcaption>
+      </figure>
+    </header>
+
+    <section class="section">
+      <h2>Start here</h2>
+
+      <div class="link-grid">
+        <a href={`${import.meta.env.BASE_URL}plan-a-visit/`} class="link-card">
+          <strong>Plan a Visit</strong>
+          <div class="link-card__meta">What Sundays are like.</div>
+        </a>
+
+        <a href={`${import.meta.env.BASE_URL}families/`} class="link-card">
+          <strong>Families</strong>
+          <div class="link-card__meta">Kids, youth, and community.</div>
+        </a>
+
+        <a href={`${import.meta.env.BASE_URL}messages/`} class="link-card">
+          <strong>Messages</strong>
+          <div class="link-card__meta">Watch a recent service.</div>
+        </a>
+
+        <a href={`${import.meta.env.BASE_URL}about/`} class="link-card">
+          <strong>About</strong>
+          <div class="link-card__meta">Our ethos and beliefs.</div>
+        </a>
       </div>
-      <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem;">
-        A welcoming community, centered on Jesus.
-      </figcaption>
-    </figure>
-  </section>
+    </section>
 
-  <section>
-    <h2>Start here</h2>
+    <section class="section">
+      <h2>Welcome</h2>
+      <p>
+        Wherever you’re coming from, whatever questions you bring, you’re welcome here. We’re a community learning to
+        follow Jesus together, with room to grow, to belong, and to take things at your own pace.
+      </p>
+    </section>
 
-    <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-      <a
-        href={`${import.meta.env.BASE_URL}plan-a-visit/`}
-        style="
-          display: block;
-          padding: 1rem;
-          border-radius: 12px;
-          background: #f5f5f5;
-          text-decoration: none;
-        "
-      >
-        <strong>Plan a Visit</strong>
-        <div style="color: #555; margin-top: 0.25rem;">What Sundays are like.</div>
-      </a>
+    <section class="section">
+      <h2>Why people come to Pine Lake</h2>
 
-      <a
-        href={`${import.meta.env.BASE_URL}families/`}
-        style="
-          display: block;
-          padding: 1rem;
-          border-radius: 12px;
-          background: #f5f5f5;
-          text-decoration: none;
-        "
-      >
-        <strong>Families</strong>
-        <div style="color: #555; margin-top: 0.25rem;">Kids, youth, and community.</div>
-      </a>
+      <p class="measure--medium">A few voices from our community — and a few glimpses of life together at Pine Lake.</p>
 
-      <a
-        href={`${import.meta.env.BASE_URL}messages/`}
-        style="
-          display: block;
-          padding: 1rem;
-          border-radius: 12px;
-          background: #f5f5f5;
-          text-decoration: none;
-        "
-      >
-        <strong>Messages</strong>
-        <div style="color: #555; margin-top: 0.25rem;">Watch a recent service.</div>
-      </a>
+      <VignetteGrid images={vignettes} />
+      <QuoteGrid quotes={homepageQuotes} />
+      <p>
+        <a href={`${import.meta.env.BASE_URL}stories/`}>More stories from Pine Lake</a>
+      </p>
+    </section>
 
-      <a
-        href={`${import.meta.env.BASE_URL}about/`}
-        style="
-          display: block;
-          padding: 1rem;
-          border-radius: 12px;
-          background: #f5f5f5;
-          text-decoration: none;
-        "
-      >
-        <strong>About</strong>
-        <div style="color: #555; margin-top: 0.25rem;">Our ethos and beliefs.</div>
-      </a>
-    </div>
-  </section>
+    <section class="section">
+      <h2>Moments from Pine Lake</h2>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>
-      Wherever you’re coming from, whatever questions you bring, you’re welcome here. We’re a community learning to
-      follow Jesus together, with room to grow, to belong, and to take things at your own pace.
-    </p>
-  </section>
-
-  <section>
-    <h2>Why people come to Pine Lake</h2>
-
-    <p style="max-width: 60ch;">A few voices from our community — and a few glimpses of life together at Pine Lake.</p>
-
-    <VignetteGrid images={vignettes} />
-    <QuoteGrid quotes={homepageQuotes} />
-    <p style="margin-top: 1rem;">
-      <a href={`${import.meta.env.BASE_URL}stories/`}>More stories from Pine Lake</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Moments from Pine Lake</h2>
-
-    <div style="display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-      <div style="aspect-ratio: 4 / 5; border-radius: 12px; background: #eee; display: grid; place-items: center;">
-        <span style="color: #777;">Photo</span>
-      </div>
-      <div style="aspect-ratio: 4 / 5; border-radius: 12px; background: #eee; display: grid; place-items: center;">
-        <span style="color: #777;">Photo</span>
-      </div>
-      <div style="aspect-ratio: 4 / 5; border-radius: 12px; background: #eee; display: grid; place-items: center;">
-        <span style="color: #777;">Photo</span>
-      </div>
-      <div style="aspect-ratio: 4 / 5; border-radius: 12px; background: #eee; display: grid; place-items: center;">
-        <span style="color: #777;">Photo</span>
-      </div>
-    </div>
-
-    <p style="margin-top: 1rem;">
-      <a href="https://www.instagram.com/pinelakecov/" rel="noopener">See more on Instagram</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Join us this Sunday</h2>
-
-    <div style="display: grid; gap: 1rem; grid-template-columns: 1.2fr 0.8fr; align-items: start;">
-      <div>
-        <p>
-          <strong>Sunday at 10:00am</strong><br />
-          1715 228th Ave SE<br />
-          Sammamish, WA 98075
-        </p>
-
-        <p>
-          <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
-          ·
-          <a href={`${import.meta.env.BASE_URL}families/`}>Families</a>
-        </p>
+      <div class="tile-grid">
+        <div class="tile ratio-4x5">
+          <span class="media__label">Photo</span>
+        </div>
+        <div class="tile ratio-4x5">
+          <span class="media__label">Photo</span>
+        </div>
+        <div class="tile ratio-4x5">
+          <span class="media__label">Photo</span>
+        </div>
+        <div class="tile ratio-4x5">
+          <span class="media__label">Photo</span>
+        </div>
       </div>
 
-      <div
-        style="
-          aspect-ratio: 4 / 3;
-          width: 100%;
-          border-radius: 12px;
-          background: #eee;
-          display: grid;
-          place-items: center;
-        "
-      >
-        <span style="color: #777;">Map placeholder</span>
+      <p>
+        <a href="https://www.instagram.com/pinelakecov/" rel="noopener">See more on Instagram</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Join us this Sunday</h2>
+
+      <div class="split-grid">
+        <div>
+          <p>
+            <strong>Sunday at 10:00am</strong><br />
+            1715 228th Ave SE<br />
+            Sammamish, WA 98075
+          </p>
+
+          <p>
+            <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
+            ·
+            <a href={`${import.meta.env.BASE_URL}families/`}>Families</a>
+          </p>
+        </div>
+
+        <div class="media__frame ratio-4x3">
+          <span class="media__label">Map placeholder</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </article>
 </BaseLayout>

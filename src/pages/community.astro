@@ -3,54 +3,66 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title="Community | Pine Lake Covenant Church">
-  <h1>Community</h1>
+  <article class="page">
+    <header class="page__header">
+      <h1>Community</h1>
 
-  <p>
-    Pine Lake is more than a Sunday gathering. For those who call this church home, community is where faith is
-    practiced through relationships, service, generosity, and shared life.
-  </p>
+      <p class="page__lede">
+        Pine Lake is more than a Sunday gathering. For those who call this church home, community is where faith is
+        practiced through relationships, service, generosity, and shared life.
+      </p>
+    </header>
 
-  <h2>Life together</h2>
+    <section class="section">
+      <h2>Life together</h2>
 
-  <p>
-    Community at Pine Lake takes many forms — gathering in smaller groups, serving alongside others, and supporting one
-    another through different seasons of life.
-  </p>
+      <p>
+        Community at Pine Lake takes many forms — gathering in smaller groups, serving alongside others, and supporting
+        one another through different seasons of life.
+      </p>
 
-  <ul>
-    <li>
-      <strong>Life Groups</strong><br />
-      Small groups that meet regularly to build relationships, study Scripture, and grow together.
-    </li>
-    <li>
-      <strong>Serve & Volunteer</strong><br />
-      Opportunities to serve within the church and in the wider community.
-    </li>
-  </ul>
+      <ul>
+        <li>
+          <strong>Life Groups</strong><br />
+          Small groups that meet regularly to build relationships, study Scripture, and grow together.
+        </li>
+        <li>
+          <strong>Serve & Volunteer</strong><br />
+          Opportunities to serve within the church and in the wider community.
+        </li>
+      </ul>
+    </section>
 
-  <h2>Practicing generosity</h2>
+    <section class="section">
+      <h2>Practicing generosity</h2>
 
-  <p>
-    Giving is one way we respond to God’s generosity toward us. It supports the mission and ministries of Pine Lake and
-    helps us care for our community, both locally and globally.
-  </p>
+      <p>
+        Giving is one way we respond to God’s generosity toward us. It supports the mission and ministries of Pine Lake
+        and helps us care for our community, both locally and globally.
+      </p>
 
-  <p>
-    <a href="https://plcc.churchcenter.com/giving">Learn more about giving at Pine Lake</a>
-  </p>
+      <p>
+        <a href="https://plcc.churchcenter.com/giving">Learn more about giving at Pine Lake</a>
+      </p>
+    </section>
 
-  <h2>Care & support</h2>
+    <section class="section">
+      <h2>Care & support</h2>
 
-  <p>
-    When life is difficult, the church is here to offer prayer, care, and practical support. You don’t have to walk
-    alone.
-  </p>
+      <p>
+        When life is difficult, the church is here to offer prayer, care, and practical support. You don’t have to walk
+        alone.
+      </p>
+    </section>
 
-  <h2>Getting started</h2>
+    <section class="section">
+      <h2>Getting started</h2>
 
-  <p>
-    If you’re exploring community at Pine Lake for the first time,
-    <a href={`${import.meta.env.BASE_URL}next-steps/`}>Next Steps</a>
-    is a great place to begin.
-  </p>
+      <p>
+        If you’re exploring community at Pine Lake for the first time,
+        <a href={`${import.meta.env.BASE_URL}next-steps/`}>Next Steps</a>
+        is a great place to begin.
+      </p>
+    </section>
+  </article>
 </BaseLayout>

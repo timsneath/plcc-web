@@ -3,14 +3,19 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title="Next Steps | Pine Lake Covenant Church">
-  <h1>Next Steps</h1>
+  <article class="page">
+    <header class="page__header">
+      <h1>Next Steps</h1>
+      <p class="page__lede">Simple ways to move from “I visited” to “I belong.”</p>
+    </header>
 
-  <p>Simple ways to move from “I visited” to “I belong.”</p>
-
-  <ul>
-    <li><a href="https://plcc.churchcenter.com/groups">Join a Group</a></li>
-    <li><a href="https://plcc.churchcenter.com/registrations">Get Involved / Signups</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}serve/`}>Serve</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}contact/`}>Talk to someone</a></li>
-  </ul>
+    <section class="section">
+      <ul>
+        <li><a href="https://plcc.churchcenter.com/groups">Join a Group</a></li>
+        <li><a href="https://plcc.churchcenter.com/registrations">Get Involved / Signups</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}serve/`}>Serve</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}contact/`}>Talk to someone</a></li>
+      </ul>
+    </section>
+  </article>
 </BaseLayout>

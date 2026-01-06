@@ -3,79 +3,81 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title="Stephen Ministry | Pine Lake Covenant Church">
-  <header style="max-width: 75ch; margin: 2rem 0 1.5rem;">
-    <h1>Stephen Ministry</h1>
-    <p style="color:#555; margin-top:.25rem;">One-to-one care during difficult seasons of life</p>
+  <article class="page">
+    <header class="page__header">
+      <h1>Stephen Ministry</h1>
+      <p class="page__subhead">One-to-one care during difficult seasons of life</p>
 
-    <p style="margin-top: 1rem;">
-      Sometimes what helps most is having someone who will listen, care, and walk alongside you — consistently and
-      confidentially — during a challenging season. Stephen Ministry provides that kind of support.
-    </p>
-  </header>
+      <p class="page__lede">
+        Sometimes what helps most is having someone who will listen, care, and walk alongside you — consistently and
+        confidentially — during a challenging season. Stephen Ministry provides that kind of support.
+      </p>
+    </header>
 
-  <section style="max-width: 75ch;">
-    <h2>What is Stephen Ministry?</h2>
+    <section>
+      <h2>What is Stephen Ministry?</h2>
+
+      <p>
+        Stephen Ministry is a confidential, one-to-one care relationship. Trained volunteers (called Stephen Ministers)
+        meet regularly with individuals who are going through a difficult time.
+      </p>
+
+      <p>
+        This might include grief, illness, caregiving stress, divorce, job loss, or other life transitions. Stephen
+        Ministers are not counselors or therapists — they are caring listeners who offer presence, encouragement, and
+        support.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who is this for?</h2>
+
+      <p>
+        Stephen Ministry is for anyone who would benefit from steady, personal support during a challenging season. You
+        don’t need to be a member of Pine Lake, and there’s no expectation that you already have a church background.
+      </p>
+
+      <ul>
+        <li>Those experiencing grief or loss</li>
+        <li>People facing illness or caregiving responsibilities</li>
+        <li>Individuals navigating major life changes</li>
+        <li>Anyone feeling overwhelmed or isolated</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What does care look like?</h2>
+
+      <p>
+        A Stephen Minister meets with one person at a time, usually on a weekly basis, for as long as support is needed.
+        These conversations are confidential and focused on listening, encouragement, and practical care.
+      </p>
+
+      <p>
+        Stephen Ministers receive extensive training and ongoing supervision to ensure care is thoughtful, respectful,
+        and trustworthy.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to get connected</h2>
+
+      <p>
+        If you think Stephen Ministry might be helpful — for yourself or someone you care about — we invite you to reach
+        out. A coordinator will follow up privately to listen and help determine whether this is a good fit.
+      </p>
+
+      <p>
+        You can contact the church office at
+        <a href="tel:+14253928636">(425) 392-8636</a>
+        or email
+        <a href="mailto:office@plcc.org">office@plcc.org</a>.
+      </p>
+    </section>
 
     <p>
-      Stephen Ministry is a confidential, one-to-one care relationship. Trained volunteers (called Stephen Ministers)
-      meet regularly with individuals who are going through a difficult time.
+      If Pine Lake becomes your church home, there are many ways to support others through care and service.
+      <a href={`${import.meta.env.BASE_URL}community/`}>Explore life at Pine Lake</a>.
     </p>
-
-    <p>
-      This might include grief, illness, caregiving stress, divorce, job loss, or other life transitions. Stephen
-      Ministers are not counselors or therapists — they are caring listeners who offer presence, encouragement, and
-      support.
-    </p>
-  </section>
-
-  <section style="max-width: 75ch; margin-top: 2rem;">
-    <h2>Who is this for?</h2>
-
-    <p>
-      Stephen Ministry is for anyone who would benefit from steady, personal support during a challenging season. You
-      don’t need to be a member of Pine Lake, and there’s no expectation that you already have a church background.
-    </p>
-
-    <ul>
-      <li>Those experiencing grief or loss</li>
-      <li>People facing illness or caregiving responsibilities</li>
-      <li>Individuals navigating major life changes</li>
-      <li>Anyone feeling overwhelmed or isolated</li>
-    </ul>
-  </section>
-
-  <section style="max-width: 75ch; margin-top: 2rem;">
-    <h2>What does care look like?</h2>
-
-    <p>
-      A Stephen Minister meets with one person at a time, usually on a weekly basis, for as long as support is needed.
-      These conversations are confidential and focused on listening, encouragement, and practical care.
-    </p>
-
-    <p>
-      Stephen Ministers receive extensive training and ongoing supervision to ensure care is thoughtful, respectful, and
-      trustworthy.
-    </p>
-  </section>
-
-  <section style="max-width: 75ch; margin-top: 2rem;">
-    <h2>How to get connected</h2>
-
-    <p>
-      If you think Stephen Ministry might be helpful — for yourself or someone you care about — we invite you to reach
-      out. A coordinator will follow up privately to listen and help determine whether this is a good fit.
-    </p>
-
-    <p>
-      You can contact the church office at
-      <a href="tel:+14253928636">(425) 392-8636</a>
-      or email
-      <a href="mailto:office@plcc.org">office@plcc.org</a>.
-    </p>
-  </section>
-
-  <p style="max-width: 75ch; margin-top: 2rem;">
-    If Pine Lake becomes your church home, there are many ways to support others through care and service.
-    <a href={`${import.meta.env.BASE_URL}community/`}>Explore life at Pine Lake</a>.
-  </p>
+  </article>
 </BaseLayout>

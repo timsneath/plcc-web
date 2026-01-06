@@ -3,56 +3,63 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title="I’m New | Pine Lake Covenant Church">
-  <h1>I’m New</h1>
+  <article class="page">
+    <header class="page__header">
+      <h1>I’m New</h1>
+      <p class="page__lede">
+        Visiting a new church can feel unfamiliar — especially if you haven’t been to church in a while, or aren’t quite
+        sure what you’re looking for. Whether you’re just curious or thinking about visiting for the first time, we’re
+        glad you’re here.
+      </p>
+    </header>
 
-  <p>
-    Visiting a new church can feel unfamiliar — especially if you haven’t been to church in a while, or aren’t quite
-    sure what you’re looking for. Whether you’re just curious or thinking about visiting for the first time, we’re glad
-    you’re here.
-  </p>
+    <section class="section">
+      <h2>Start here</h2>
 
-  <h2>Start here</h2>
+      <ul>
+        <li>
+          <strong>Plan a Visit</strong><br />
+          What Sundays are like, where to go, and what to expect when you arrive.<br />
+          <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Learn more</a>
+        </li>
 
-  <ul>
-    <li>
-      <strong>Plan a Visit</strong><br />
-      What Sundays are like, where to go, and what to expect when you arrive.<br />
-      <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Learn more</a>
-    </li>
+        <li>
+          <strong>Families</strong><br />
+          Community, support, and programs for parents, kids, and youth — on Sundays and beyond.<br />
+          <a href={`${import.meta.env.BASE_URL}families/`}>Learn more</a>
+        </li>
 
-    <li>
-      <strong>Families</strong><br />
-      Community, support, and programs for parents, kids, and youth — on Sundays and beyond.<br />
-      <a href={`${import.meta.env.BASE_URL}families/`}>Learn more</a>
-    </li>
+        <li>
+          <strong>About Pine Lake</strong><br />
+          Our story, values, and the kind of church we’re trying to be.<br />
+          <a href={`${import.meta.env.BASE_URL}about/`}>Learn more</a>
+        </li>
 
-    <li>
-      <strong>About Pine Lake</strong><br />
-      Our story, values, and the kind of church we’re trying to be.<br />
-      <a href={`${import.meta.env.BASE_URL}about/`}>Learn more</a>
-    </li>
+        <li>
+          <strong>Messages</strong><br />
+          Curious what teaching is like? Watch or listen to a recent message.<br />
+          <a href={`${import.meta.env.BASE_URL}messages/`}>Listen or watch</a>
+        </li>
+      </ul>
+    </section>
 
-    <li>
-      <strong>Messages</strong><br />
-      Curious what teaching is like? Watch or listen to a recent message.<br />
-      <a href={`${import.meta.env.BASE_URL}messages/`}>Listen or watch</a>
-    </li>
-  </ul>
+    <section class="section">
+      <h2>What to expect here</h2>
 
-  <h2>What to expect here</h2>
+      <p>
+        You won’t be asked to introduce yourself, explain what you believe, or commit to anything. Some people who come
+        to Pine Lake have deep faith, others are exploring, returning after time away, or connected through family or
+        community.
+      </p>
 
-  <p>
-    You won’t be asked to introduce yourself, explain what you believe, or commit to anything. Some people who come to
-    Pine Lake have deep faith, others are exploring, returning after time away, or connected through family or
-    community.
-  </p>
+      <p>You’re welcome to participate at whatever pace feels right to you.</p>
 
-  <p>You’re welcome to participate at whatever pace feels right to you.</p>
-
-  <p>
-    If you’re wondering where to begin, most people start with
-    <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
-    or <a href={`${import.meta.env.BASE_URL}families/`}>Families</a>. Both will give you a clearer sense of what life at
-    Pine Lake looks like.
-  </p>
+      <p>
+        If you’re wondering where to begin, most people start with
+        <a href={`${import.meta.env.BASE_URL}plan-a-visit/`}>Plan a Visit</a>
+        or <a href={`${import.meta.env.BASE_URL}families/`}>Families</a>. Both will give you a clearer sense of what life
+        at Pine Lake looks like.
+      </p>
+    </section>
+  </article>
 </BaseLayout>
